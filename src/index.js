@@ -1,3 +1,8 @@
-import message from './new.js'
+import React from 'react'
+import ReactDOM from 'react-dom'
+import HelloMessage, {GoodbyeMessage} from './new.js'
 
-document.getElementById('container').innerHTML = message
+ReactDOM.render(
+  (<HelloMessage name='Jane'/>),
+  document.getElementById('container')
+)
