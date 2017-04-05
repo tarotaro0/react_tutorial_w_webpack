@@ -1,1 +1,1 @@
-module.exports = "<h1>Goodbye!</h1>"
+export default "<h1>Goodbye!!!!</h1>"
