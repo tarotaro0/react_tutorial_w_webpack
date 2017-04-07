@@ -1,15 +1,13 @@
 import React, {Component} from 'react'
 
 export default class HelloMessage extends Component {
-  constructor(props) {
-    super(props)
 
-    const {name} = props
-    this.state = { name }
+  static propTypes = {
+    name: React.PropTypes.string.isRequired
   }
 
   render() {
-    const {name} = this.state
+    const {name} = this.props
     return (
       <div>
         Hello!! {name}
