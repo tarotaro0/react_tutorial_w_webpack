@@ -1,6 +1,9 @@
 var html = require("html-webpack-plugin")
 
 module.exports = {
+  output: {
+    publicPath: 'http://localhost:8080'
+  },
   devtool: 'cheap-eval-source-map',
   entry: './src/index.js',
   plugins: [
